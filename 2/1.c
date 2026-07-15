@@ -16,7 +16,6 @@ int main(){
         mat[i] = malloc(sizeof(int) * b);
     }
     
-    
 	//ここで2次元配列に数値を代入する
     k = 1;
     for(i = 0; i < a; i++) {

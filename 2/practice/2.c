@@ -3,7 +3,7 @@
 
 int strlen(char str[]) {
     int len = 0;
-    while(str[len]!='0') {
+    while(str[len]!='\0') {
         len++;
     }
     return len;
@@ -20,8 +20,9 @@ int setPalindrome(char s[]) {
     for(i=0; i<len; i++){
         palindrome[len + i] += s[len - i - 1];
     }
+
     palindrome[len * 2] = '\0';
-    return palindrome
+    return palindrome;
 }
 
 

@@ -63,22 +63,36 @@
 
 // 演習4
 
-int main(void) {
-    char s[1024];
-    char t[1024];
+// int main(void) {
+//     char s[1024];
+//     char t[1024];
 
-    int i = 0;
-    int len = 0;
+//     int i = 0;
+//     int len = 0;
 
-    while(s[i] != '\0') {
-        i++;
-        len++;
-    }
+//     while(s[i] != '\0') {
+//         i++;
+//         len++;
+//     }
 
-    int j;
+//     int j;
 
-    for(j = 0; t[j] != '\0'; j++) {
-        s[len + j] += t[j];
-    }
-    printf("%s", s);
-}
+//     for(j = 0; t[j] != '\0'; j++) {
+//         s[len + j] += t[j];
+//     }
+//     printf("%s", s);
+// }
+
+// 演習5
+
+// int main(){
+//     char s[1024];
+//     int i;
+
+//     for(i = 0; s[i] != '\0'; i++){
+//         if(s[i] >= 'a' && s[i] <= 'z') {
+//             s[i] -= 32;
+//         }
+//     }
+//     printf("%s", s);
+// }

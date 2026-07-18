@@ -18,23 +18,45 @@
 
 // 演習２
 
-int main(void) {
+// int main(void) {
+//     char s[1024];
+//     char t[1024];
+//     int i;
+//     int len = 0;
+
+//     scanf("%s", s);
+
+//     i = 0;
+//     while(s[i] != '\0'){
+//         i++;
+//         len++;
+//     }
+
+//     for(i = 0; i < len; i++) {
+//         t[i] = s[i];
+//     }
+
+//     printf("%s", t);
+// }
+
+// 演習3
+
+int main() {
+    int i;
+
     char s[1024];
     char t[1024];
-    int i;
-    int len = 0;
 
-    scanf("%s", s);
+    scanf("%s %s", s, t);
 
-    i = 0;
-    while(s[i] != '\0'){
-        i++;
-        len++;
+    for(i = 0; s[i] != '\0' && t[i] != '\0'; i++) {
+        if (s[i] != t[i]){
+            return 0;
+        }
     }
-
-    for(i = 0; i < len; i++) {
-        t[i] = s[i];
+    // どちらかが最終文字でない可能性を考慮（どちらかの文字列が長い可能性）
+    if (s[i] == '\0' || t[i] == '\0') {
+        return 0;
     }
-
-    printf("%s", t);
+    return 1;
 }

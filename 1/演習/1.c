@@ -103,3 +103,54 @@
 //     }
 //     printf("%s", s);
 // }
+
+// int main() {
+//     int i = 0;
+//     int len;
+//     char str[1024];
+//     scanf("%s", str);
+
+//     while(str[i] != '\0') {
+//         i++;
+//         len++;
+//     }
+//     printf("%d", len);
+//     return 0;
+// }
+
+// int main() {
+//     int i;
+//     char s[1024];
+//     char t[1024];
+//     scanf("%s", s);
+
+//     for(i = 0; s[i] != '\0'; i++) {
+//         t[i] = s[i];
+//     }
+//     t[i] = '\0';
+//     printf("%s", t);
+
+//     return 0;
+// }
+
+// int main() {
+//     int i;
+//     char s[1024];
+//     char t[1024];
+
+//     scanf("%s %s", s, t);
+
+//     for(i = 0; s[i] != '\0' && t[i] != '\0'; i++) {
+//         if(s[i] != t[i]) {
+//             printf("0");
+//             return 0;
+//         }
+//     }
+//     if(s[i] == '\0' && t[i] == '\0') {
+//         printf("1");
+//         return 0;
+//     } else {
+//         printf("0");
+//         return 0;
+//     }
+// }

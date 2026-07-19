@@ -52,3 +52,18 @@
 //         num[min] = tmp;
 //     }
 // }
+
+// int main() {
+//     int n;
+//     int num[1024];
+//     int bucket[1024] = {0};
+//     int i, j;
+
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++) {
+//         scanf("%d", &num[i]);
+//     }
+
+
+// }

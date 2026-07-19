@@ -1,4 +1,4 @@
-// # include <stdio.h>
+# include <stdio.h>
 
 // int main() {
 //     int n;
@@ -25,4 +25,30 @@
 //     }
 
 //     return 0;
+// }
+
+// int main() {
+//     int n;
+//     int num[1024];
+//     int i, j;
+//     int min;
+//     int tmp;
+
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++){
+//         scanf("%d", &num[i]);
+//     }
+
+//     for(i=0; i<n-1; i++){
+//         min = i;
+//         for(j=i+1; j<n; j++){
+//             if(num[j] < num[min]) {
+//                 min = j;
+//             }
+//         }
+//         tmp = num[i];
+//         num[i] = num[min];
+//         num[min] = tmp;
+//     }
 // }

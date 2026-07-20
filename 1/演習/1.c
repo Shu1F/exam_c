@@ -154,3 +154,35 @@
 //         return 0;
 //     }
 // }
+
+// int main() {
+//     char s[1024];
+//     char t[1024];
+//     int i, len;
+
+//     scanf("%s %s", s, t);
+
+//     while(s[i] != '\0') {
+//         i++;
+//         len++;
+//     }
+
+//     for(i = 0; t[i] != '\0'; i++) {
+//         s[len + i] = t[i];
+//     }
+//     s[len + i] = '\0';
+//     printf("%s", s);
+//     return 0;
+// }
+
+int main() {
+    char s[1024];
+    scanf("%s", s);
+
+    for(int i = 0; s[i] != '\0'; i++) {
+        if(s[i] >= 'a' || s[i] <= 'z') {
+            s[i] -= 32;
+        }
+    }
+    printf("%s", s);
+}
